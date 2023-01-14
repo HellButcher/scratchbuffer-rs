@@ -1,0 +1,13 @@
+[package]
+name = "scratchbuffer"
+version = "0.1.0-alpha"
+description = "A Vec<u8> like data-structure, that can be used as slices of different types"
+authors = ["Christoph Hommelsheim <main@chommel.eu>"]
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/HellButcher/dynsequence-rs.git"
+keywords = ["vec", "collection"]
+categories = ["data-structures", "no-std"]
+readme = "README.md"
+edition = "2021"
+
+[dependencies]
