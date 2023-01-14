@@ -1,6 +1,6 @@
 [package]
 name = "scratchbuffer"
-version = "0.1.0-alpha"
+version = "0.1.0-alpha.1"
 description = "A Vec<u8> like data-structure, that can be used as slices of different types"
 authors = ["Christoph Hommelsheim <main@chommel.eu>"]
 license = "MIT OR Apache-2.0"
