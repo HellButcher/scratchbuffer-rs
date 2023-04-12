@@ -7,7 +7,7 @@
 
 <!-- Short Introduction -->
 
-`ScratchBuffer<dyn Trait>` is like `Vec<Box<dyn Trait>>`, but with an optimization that avoids allocations. This works by using multiple larger blocks of memory and storing their pointers in a `Vec`. This means, the items are randomly accessible, but may not lay in continues memory.
+`ScratchBuffer<dyn Trait>` is like `Vec<Box<dyn Trait>>`, but with an optimization that avoids reallocations. It allows to store multiple items of the same type in a continous chunk of memory, and get a slice. When the ScratchBuffer is cleared, it can be re-used for multiple items of a different type. It doesn't re-allocate memory when not needed, even when re-used as a different type.
 
 ## Example
 
